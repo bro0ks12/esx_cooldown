@@ -16,7 +16,7 @@
 ### CreateCooldown
 Creates a 15 minute cooldown for the "shop_robbery" event
 ```lua
-  exports['esx_cooldown']:createCooldown('shop_robbery', 15)
+exports['esx_cooldown']:createCooldown('shop_robbery', 15)
 ```
 
 Verificar o cooldown do evento "shop_robbery"
