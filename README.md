@@ -21,11 +21,11 @@ exports['esx_cooldown']:createCooldown('shop_robbery', 15)
 
 Verificar o cooldown do evento "shop_robbery"
 ```lua
-exports['hrc_cooldown']:checkCooldown('shop_robbery', function(cooldown_time)
+exports['esx_cooldown']:checkCooldown('shop_robbery', function(cooldown_time)
     if cooldown_time and cooldown_time > 0 then
-        xPlayer.showNotification('Assalto', "A loja não pode ser assaltada agora", 'error')
+        --Notify player that is on cooldown
     else
-        exports['hrc_cooldown']:createCooldown('shop_robbery', 30)
+        exports['hrc_cooldown']:createCooldown('shop_robbery', 15)
         -- Do your robbery
     end
 end)
