@@ -19,7 +19,7 @@ Creates a 15 minute cooldown for the "shop_robbery" event
 exports['esx_cooldown']:createCooldown('shop_robbery', 15)
 ```
 
-Verificar o cooldown do evento "shop_robbery"
+Check the cooldown of the "shop_robbery" event
 ```lua
 exports['esx_cooldown']:checkCooldown('shop_robbery', function(cooldown_time)
     if cooldown_time and cooldown_time > 0 then
