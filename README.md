@@ -12,3 +12,7 @@
 - [Setup your scripts](#Usage), and you are ready to go.
 
 ## Usage
+
+### CreateCooldown
+Creates a 15 minute cooldown for the "shop_robbery" event
+`exports['esx_cooldown']:createCooldown('shop_robbery', 15)`
