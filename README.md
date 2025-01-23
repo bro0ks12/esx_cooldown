@@ -15,14 +15,18 @@
 
 ### CreateCooldown
 Creates a 15 minute cooldown for the "shop_robbery" event
-- `exports['esx_cooldown']:createCooldown('shop_robbery', 15)`
+```lua
+  exports['esx_cooldown']:createCooldown('shop_robbery', 15)
+```
 
 Verificar o cooldown do evento "shop_robbery"
-- `exports['hrc_cooldown']:checkCooldown('shop_robbery', function(cooldown_time)
+```lua
+exports['hrc_cooldown']:checkCooldown('shop_robbery', function(cooldown_time)
     if cooldown_time and cooldown_time > 0 then
         xPlayer.showNotification('Assalto', "A loja não pode ser assaltada agora", 'error')
     else
         exports['hrc_cooldown']:createCooldown('shop_robbery', 30)
         -- Do your robbery
     end
-end)`
+end)
+```
