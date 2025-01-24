@@ -25,7 +25,7 @@ exports['esx_cooldown']:checkCooldown('shop_robbery', function(cooldown_time)
     if cooldown_time and cooldown_time > 0 then
         --Notify player that is on cooldown
     else
-        exports['hrc_cooldown']:createCooldown('shop_robbery', 15)
+        exports['esx_cooldown']:createCooldown('shop_robbery', 15)
         -- Do your robbery
     end
 end)
